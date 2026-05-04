@@ -20,7 +20,7 @@ jobs:
         run: pip install requests pandas python-dotenv
 
       - name: Run stock analysis
-        run: python analyzer-service.py
+        run: python main.py
         env:
           WECHAT_WEBHOOK_URL: ${{ secrets.WECHAT_WEBHOOK_URL }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
